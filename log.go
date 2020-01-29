@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019. Genome Research Ltd. All rights reserved.
+ * Copyright (C) 2019, 2020. Genome Research Ltd. All rights reserved.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -58,6 +58,8 @@ type Message interface {
 	Err(err error) Message
 	// Bool adds a named bool field to the Message.
 	Bool(key string, val bool) Message
+	// Dur adds a named Duration field to the Message.
+	Dur(key string, val time.Duration) Message
 	// Int adds a named int field to the Message.
 	Int(key string, val int) Message
 	// Int64 adds a named int64 field to the Message.
