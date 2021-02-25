@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019. Genome Research Ltd. All rights reserved.
+ * Copyright (C) 2019, 2021. Genome Research Ltd. All rights reserved.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,6 +20,6 @@
 
 /*
 Package dlog is a log (https://golang.org/pkg/log/) backend for
-logshim (http://github.com/kjsanger/logshim).
+logshim (http://github.com/wtsi-npg/logshim).
 */
 package dlog
