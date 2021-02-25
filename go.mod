@@ -1,4 +1,4 @@
-module github.com/kjsanger/logshim
+module github.com/wtsi-npg/logshim
 
 go 1.12
 
