@@ -1,8 +1,10 @@
 name: run-tests
 
 on:
-  - push
-  - pull_request
+  push:
+    branches: [ devel ]
+  pull_request:
+    branches: [ devel ]
 
 jobs:
   build:
@@ -11,15 +13,13 @@ jobs:
       matrix:
         go: [ '1.16', '1.14' ]
 
-    name: Run tests [Go ${{ matrix.go }}]
-
     steps:
-      - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
 
-      - name: Setup Go ${{ matrix.go }}
-        uses: actions/setup-go@v1
-        with:
-          go-version: ${{ matrix.go }}
+    - name: Set up Go ${{ matrix.go }}
+      uses: actions/setup-go@v2
+      with:
+        go-version: ${{ matrix.go }}
 
-      - name: Test
-      - run: go test -v ./...
+    - name: Test
+      run: go test -v ./...
