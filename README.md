@@ -9,3 +9,5 @@ It provides a common denominator of API calls to logging backends for the most
 frequent operations i.e. log statements that will be found throughout code. It
 does not attempt to abstract away tasks such as log configuration, which are
 left to each backend's own API.
+
+[![run-tests](https://github.com/wtsi-npg/logshim/actions/workflows/run-tests.yml/badge.svg)](https://github.com/wtsi-npg/logshim/actions/workflows/run-tests.yml)
